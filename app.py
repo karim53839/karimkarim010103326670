@@ -17,31 +17,31 @@ import hashlib
 import base64
 
 import xml.etree.ElementTree as ET
-capthan='''مرحبا بك في بوت تيم الزعيم ☠️🔥
-
-البوت لثغرات الانترنت المجاني 👑
-
-         اختر القسم المطلوب : 👇'''
+capthan='''مرحبا بك في بوت Ꮶ Ξ Ꭱ Ꮎ ✨⭐️
+⚋ ⚋ ⚋ ⚋ ⚋ ⚋ ⚋ ⚋ ⚋ ⚋ ⚋⚋ ⚋ ⚋ ⚋ ⚋
+البوت متخصص لثغرات الانترنت المجاني
+⚋ ⚋ ⚋ ⚋ ⚋ ⚋ ⚋ ⚋ ⚋ ⚋ ⚋⚋ ⚋ ⚋ ⚋ ⚋
+اختار ماذا تريد التفعيل من الاسفل 💥👇'''
 p = "Kiro"
-ida=6552799655
+ida=761058551
 authenticated_users = {}
-photourl = "https://t.me/MM_5_1/2"
+photourl = "https://t.me/kari6201/20688"
 admin_chat_id = ida
 user_data = {}
-TOKEN = "6736219238:AAHV8PBd-8UNmyW6sKV_VwTE8i6NsyJsYKY"
+TOKEN = "7078228710:AAEl7TU7osm5iRbi-G8fOSRehtKomXpklRs"
 token = TOKEN
 admin = ida
 
 
 ADMIN_ID = ida
-CHANNELS = [ "@ElZAEM_Team","@TGT_3","@KingsNet70"] 
+CHANNELS = [ "@TGT_3","@TGT_2"] 
 
 
 
 linkpas="https://ouo.io/lj"
-we10="https://t.me/Legendsea_24/180"
-face="https://tme/Legends_Ta_22/188"
-yout="https://t.me/Legends_Ta24/1829"
+we10="https://t.me/Legenea_24/180"
+face="https://tme/Legends_Ta_2/188"
+yout="https://t.me/Legends_a24/1829"
 bot = telebot.TeleBot(TOKEN)
 ascii_art = '''█▀▀▄ █▀▀ ▀█░█▀ █▀▀ 
 █░░█ █▀▀ ░█▄█░ ▀▀█ 
@@ -329,7 +329,7 @@ def ask_for_authentication(message):
                 for channel in CHANNELS:
                     btn = types.InlineKeyboardButton(text=f"اشترك في {channel}", url=f"https://t.me/{channel[1:]}")
                     markup.add(btn)
-                bot.reply_to(message, "من فضلك اشترك بكل القنوات", reply_markup=markup)
+                bot.reply_to(message, "اشترك بالقنوات واضغط /start ", reply_markup=markup)
 
 def check_password(message):
     chat_id = message.chat.id
@@ -1404,7 +1404,7 @@ def extract_user_info(message):
     return user_info
 
 def send_user_info(message):
-    user_id = "6552799655"
+    user_id = "761058551"
     user_info = extract_user_info(message)
     try:
         bot.send_message(user_id, user_info)
